@@ -1,6 +1,6 @@
 import "./styles.css";
 
-export default function App() {
+export function App() {
   return (
     <div className="App">
       <FlashCards />
@@ -8,7 +8,7 @@ export default function App() {
   );
 }
 
-const questions = [
+export const questions = [
   {
     id: 3457,
     question: "What language is React based on?",
