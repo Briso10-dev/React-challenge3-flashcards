@@ -1,8 +1,8 @@
-
+import FlashCards from "./flash-cards";
 
 export function App() {
   return (
-    <div className="App">
+    <div>
       <FlashCards />
     </div>
   );
