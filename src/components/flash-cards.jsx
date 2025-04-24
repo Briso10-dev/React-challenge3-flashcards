@@ -1,9 +1,13 @@
-
+import { questions } from "./App";
 
 function FlashCards(){
     return(
         <div>
-            {qu}
+            {questions.map((question)=> (
+                <div>
+                    <p> {question.question} </p>
+                </div>
+            ))}
         </div>
 
     )
