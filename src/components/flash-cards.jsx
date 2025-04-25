@@ -35,26 +35,38 @@ const questions = [
   ];
 
 function FlashCards(){
-
-    const [selectedId,setSelectedId] = useState(null);
+    const [selectedId, setSelectedId] = useState(null);
 
     function handleCLick(id){
-        setSelectedId(id !== selectedId? id : null);
-
+        setSelectedId(id !== selectedId ? id : null);
     }
 
     return(
-        <div className="grid grid-cols-[1fr 1fr 1fr] gap-[2rem]">
-            {questions.map((question)=> (
-                <div key={question.id}
-                     onClick={ () => handleCLick(question.id)}
-                     className= {question.id === selectedId? "border-s-2 border-[#e03131] bg-[#e03131] text-white font-bold" : "border-s-2 border-[#e7e7e7] bg-[#f7f7f7] rounded-2xl aspect-2/1 flex justify-center items-center text-center p-[2rem] cursor-pointer"}>
-                    <p> { question.id === selectedId? question.answer :  question.question} </p>
-                </div>
-            ))}
+        <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+                {questions.map((question) => (
+                    <div 
+                        key={question.id}
+                        onClick={() => handleCLick(question.id)}
+                        className={`
+                            relative h-48 rounded-xl shadow-lg cursor-pointer
+                            transform transition-all duration-300 hover:scale-105
+                            ${question.id === selectedId ? 'bg-[#e03131]' : 'bg-white'}
+                            flex items-center justify-center p-8
+                            border-2 ${question.id === selectedId ? 'border-[#e03131]' : 'border-gray-200'}
+                        `}
+                    >
+                        <p className={`
+                            text-center text-lg font-medium
+                            ${question.id === selectedId ? 'text-white' : 'text-gray-800'}
+                        `}>
+                            {question.id === selectedId ? question.answer : question.question}
+                        </p>
+                    </div>
+                ))}
+            </div>
         </div>
-
-    )
+    );
 }
 
 export default FlashCards;
