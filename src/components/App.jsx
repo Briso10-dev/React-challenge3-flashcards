@@ -1,13 +1,5 @@
 import FlashCards from "./flash-cards";
 
-export function App() {
-  return (
-    <div>
-      <FlashCards />
-    </div>
-  );
-}
-
 export const questions = [
   {
     id: 3457,
@@ -42,6 +34,10 @@ export const questions = [
   }
 ];
 
-function FlashCards() {
-  return <div>TODO</div>;
+export function App() {
+  return (
+    <div>
+      <FlashCards />
+    </div>
+  );
 }
