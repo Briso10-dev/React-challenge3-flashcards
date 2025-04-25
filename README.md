@@ -1,12 +1,88 @@
-# React + Vite
+# React Flashcards Quiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive flashcard application built with React that helps users learn React concepts through a question-and-answer format. This project was created as part of a React learning journey from a Udemy course.
 
-Currently, two official plugins are available:
+<!-- ![React Flashcards Preview](preview.png) -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Interactive flashcards with questions about React fundamentals
+- Grid-based layout for easy navigation
+- Click-to-reveal answers
+- Modern and responsive design with Tailwind CSS
+- Smooth animations and transitions
+- Memory state management using React hooks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React 19.0.0
+- Vite 6.3.1
+- Tailwind CSS 4.1.4
+- JavaScript (ES6+)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone [https://github.com/Briso10-dev/React-challenge3-flashcards.git]
+```
+
+2. Navigate to the project directory:
+```bash
+cd React-challenge3-flashcards
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Start the development server:
+```bash
+npm start
+```
+
+5. Open your browser and visit `http://localhost:5173`
+
+## Usage
+
+- Click on any card to reveal its answer
+- Click again to hide the answer
+- Cards are color-coded:
+  - Gray: Question is displayed
+  - Red: Answer is revealed
+
+## Learning Objectives
+
+This project demonstrates understanding of:
+- React Components
+- State Management with useState
+- Event Handling
+- Conditional Rendering
+- CSS Grid Layout
+- Modern React Development with Vite
+
+## Development
+
+To modify or extend this project:
+
+1. The main component is in `src/components/flash-cards.jsx`
+2. Styles are managed through Tailwind CSS classes
+3. Questions can be modified in the `questions` array within the main component
+
+## License
+
+This project is open-source and available under the MIT License.
+
+## Acknowledgments
+
+- Created as part of [Your Udemy Course Name]
+- Built with modern React best practices
+- Styled with Tailwind CSS

@@ -47,8 +47,8 @@ function FlashCards(){
         <div className="grid grid-cols-[1fr 1fr 1fr] gap-[2rem]">
             {questions.map((question)=> (
                 <div key={question.id}
-                onClick={ () => handleCLick(question.id)}
-                    className= {question.id === selectedId? "border-s-2 border-[#e03131] bg-[#e03131] text-white font-bold" : "border-s-2 border-[#e7e7e7] bg-[#f7f7f7] rounded-2xl aspect-2/1 flex justify-center items-center text-center p-[2rem] cursor-pointer"}>
+                     onClick={ () => handleCLick(question.id)}
+                     className= {question.id === selectedId? "border-s-2 border-[#e03131] bg-[#e03131] text-white font-bold" : "border-s-2 border-[#e7e7e7] bg-[#f7f7f7] rounded-2xl aspect-2/1 flex justify-center items-center text-center p-[2rem] cursor-pointer"}>
                     <p> { question.id === selectedId? question.answer :  question.question} </p>
                 </div>
             ))}
