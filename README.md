@@ -83,6 +83,10 @@ This project is open-source and available under the MIT License.
 
 ## Acknowledgments
 
-- Created as part of [Your Udemy Course Name]
 - Built with modern React best practices
 - Styled with Tailwind CSS
+
+
+**Happy Coding!** 🚀
+
+---
