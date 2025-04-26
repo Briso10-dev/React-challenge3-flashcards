@@ -42,22 +42,23 @@ function FlashCards(){
     }
 
     return(
-        <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+        <div className="min-h-screen flex items-center justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[10rem] p-8 max-w-4/5 mx-auto h-[80vh]">
                 {questions.map((question) => (
                     <div 
                         key={question.id}
                         onClick={() => handleCLick(question.id)}
                         className={`
-                            relative h-48 rounded-xl shadow-lg cursor-pointer
+                            relative h-[26rem] rounded-xl shadow-lg cursor-pointer
                             transform transition-all duration-300 hover:scale-105
                             ${question.id === selectedId ? 'bg-[#e03131]' : 'bg-white'}
                             flex items-center justify-center p-8
-                            border-2 ${question.id === selectedId ? 'border-[#e03131]' : 'border-gray-200'}
+                            border-4 ${question.id === selectedId ? 'border-[#e03131]' : 'border-gray-200'}
+                            w-full
                         `}
                     >
                         <p className={`
-                            text-center text-lg font-medium
+                            text-center text-3xl font-medium
                             ${question.id === selectedId ? 'text-white' : 'text-gray-800'}
                         `}>
                             {question.id === selectedId ? question.answer : question.question}
