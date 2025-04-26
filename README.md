@@ -2,7 +2,7 @@
 
 An interactive flashcard application built with React that helps users learn React concepts through a question-and-answer format. This project was created as part of a React learning journey from a Udemy course.
 
-<!-- ![React Flashcards Preview](preview.png) -->
+ ![React Flashcards Preview](./assets/preview.png)
 
 ## Features
 
